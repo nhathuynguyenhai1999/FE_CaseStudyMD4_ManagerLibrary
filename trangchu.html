@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css1/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css1/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css1/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css1/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css1/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css1/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css1/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css1/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>2.700.000 vnđ</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Chi tiết cửa hàng</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Kiểm tra</a></li>
+                        <li><a href="./blog-details.html">Chi tiết khác</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Giao hàng miễn phí cho tất cả đơn hàng có mệnh giá từ 2.500.000 VNĐ</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                                <li>Giao hàng miễn phí cho tất cả đơn hàng có mệnh giá từ 2.500.000 VNĐ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="img/language.png" alt="">
+                                <div>English</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+<!--                                local storage có chưa
+-->
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 50px;background-color: #7fad39",>
+                                        Information
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border-radius: 20px">
+                                        <a class="dropdown-item" href="#" onclick="redirectToProfile()">Profile</a>
+                                        <a class="dropdown-item" href="#">Cài đặt</a>
+                                        <a class="dropdown-item" href="#">Khác</a>
+                                        <a class="dropdown-item" href="login.html">Đăng nhập</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Chi tiết cửa hàng</a></li>
+                                    <li><a href="./shoping-cart.html">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.html">Kiểm tra</a></li>
+                                    <li><a href="./blog-details.html">Chi tiết khác</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>2.700.000 VNĐ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Danh mục</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Tiểu thuyết và truyện ngắn</a></li>
+                            <li><a href="#">Sách hướng dẫn và tham khảo</a></li>
+                            <li><a href="#">Sách giáo khoa</a></li>
+                            <li><a href="#">Sách khoa học và công nghệ</a></li>
+                            <li><a href="#">Sách tự truyện và hồi ký</a></li>
+                            <li><a href="#">Sách tự phát triển</a></li>
+                            <li><a href="#">Sách thơ</a></li>
+                            <li><a href="#">Sách hài hước và giải trí</a></li>
+                            <li><a href="#">Sách nghệ thuật</a></li>
+                            <!-- <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Fresh Bananas</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    Tất cả các danh mục
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="Bạn muốn điều gì?">
+                                <button type="submit" class="site-btn">TÌM KIẾM</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>Hỗ trợ 24/7h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                        <div class="hero__text">
+                            <span>Books Store</span>
+                            <h2>Giảm giá cực mạnh <br />100% cho đơn hàng giá trên 2.000.000VNĐ</h2>
+                            <p>Có sẵn dịch vụ nhận và giao hàng miễn phí</p>
+                            <a href="#" class="primary-btn">ĐẶT MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/tieu_thuyet_truyen_ngan.png">
+                            <h5><a href="#">Tiểu thuyết và truyện ngắn</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/huong_dan_tham_khao.jpg">
+                            <h5><a href="#">Sách hướng dẫn và sách tham khảo</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/giaotrinh.jpg">
+                            <h5><a href="#">Sách giáo trình</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/khoahoc&congnghe.jpg">
+                            <h5><a href="#">Sách khoa học và công nghệ</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/tutruyen&hoiky.jpg">
+                            <h5><a href="#">Sách tự truyện và hồi ký</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/kinhdoanhtaichinh.jpg">
+                            <h5><a href="#">Sách kinh doanh và tài chính</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/tuphattrien.jpg">
+                            <h5><a href="#">Sách tự phát triển</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/lao-hac-29019.jpg">
+                            <h5><a href="#">Sách thơ</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/haihuocgiaitri.jpg">
+                            <h5><a href="#">Sách hài hước và giải trí</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/avatar/R.jpg">
+                            <h5><a href="#">Sách nghệ thuật</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Sản phẩm nổi bật</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Tất cả danh mục</li>
+                            <li data-filter=".oranges">Sách giáo khoa</li>
+                            <li data-filter=".fresh-meat">Sách tài liệu & tham khảo</li>
+                            <li data-filter=".vegetables">Sách thể thao và chính trị</li>
+                            <li data-filter=".fastfood">Other</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/baogiohete.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bao giờ hết ế</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/parkhangseo.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Phong cách quản trị Park hang seo</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/ielts.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Tài liệu học tiếng Anh IELTS cho người mới bắt đầu</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/giaotrinhcode.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Luyện code từ con số 0</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/toanluonggiaclop10.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Giải toán lượng giác lớp 10</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/14054939_846797928789475_7238308479960634537_n.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bí quyết tán tái gài Độc quyền Nhà Nguyễn</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/hoc-jack-ma-khoi-nghiep.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Học Jack Ma Khởi nghiệp</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/feature/tactics.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bảng chiến thuật bóng đá</a></h6>
+                            <h5>765.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <!-- <img src="img/banner/banner-1.jpg" alt=""> -->
+                        <img src="images/bann/cach-doc-sach-hieu-qua-2559.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <!-- <img src="img/banner/banner-2.jpg" alt=""> -->
+                        <img src="images/bann/cach-doc-sach-hieu-qua-2559.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Sản phẩm mới nhất</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/maxresdefault.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lộ trình học web | Dành cho người bắt đầu</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/html.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Định dạng văn bản từ HTML</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/Sach-giao-khoa-sinh-hoc-10-chan-troi-sang-tao.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Sách giáo khoa Sinh học lớp 10</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/OIP.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Học tốt Lịch sử 12</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/sach-ve-tam-ly-hoc-6.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Tâm lý học thành công</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/9786043268942.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Sách trí tuệ nhân tạo học máy và ứng dụng</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Sản phẩm được xếp hạng hàng đầu</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/915f688ccc1c1d0cefa0ce940dfe24d9.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Từ ý tưởng đến công bố</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/OIP (1).jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Những viên kim cương trong bất đẳng thức Toán học</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/tui-lop-con-ru-nhau-vao-nha-nghi-day-ra-day-me-quen-di.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Giáo dục giới tính cho trẻ vị thành niên</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/R.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>EBook | Bí quyết nấu ăn các món súp</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/OIP (2).jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Bí quyết bạc tỷ và triệu phú</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/sach-bi-mat-con-tre-tran-quoc-phuc-600x600.webp" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Trần Quốc Phúc | Bí mật trí tuệ</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/feature/baogiohete.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Bao giờ hết ế</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/feature/14054939_846797928789475_7238308479960634537_n.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Bí quyết tán tái gài Độc quyền Nhà Nguyễn</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/feature/hoc-jack-ma-khoi-nghiep.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Học Jack Ma khởi nghiệp</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/img202305160026-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Bí quyết khởi nghiệp</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/OIP (3).jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Bí quyết học và thành công Marketing</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/lastest-product/2023_10_17_16_47_03_1-390x510.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Kế hoạch Marketing trên 1 trang giấy</h6>
+                                        <span>765.000 VNĐ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Tin tức</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="images/banner/lovepik-hand-painted-girl-sitting-reading-characters-png-image_401033718_wh1200.png" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> Ngày 5/4/2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Đọc sách mẹo làm cho kiến thức trở nên đơn giản</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="images/banner/OIP.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">6 cách để chuẩn bị đọc cho 30 điều nên biết</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="images/banner/OIP (1).jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Khám phá những sản phẩm mới của chúng tôi</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 60-49 Road 11378 New York</li>
+                            <li>Hotline: +65 11.188.888</li>
+                            <li>Email: hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Thông tin bổ ích</h6>
+                        <ul>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Về cửa hàng của chúng tôi</a></li>
+                            <li><a href="#">Mua sắm an toàn</a></li>
+                            <li><a href="#">Thông tin giao hàng</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Khác</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Dịch vụ của chúng tôi</a></li>
+                            <li><a href="#">Dự án</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Sáng kiến</a></li>
+                            <li><a href="#">Ý kiến khách hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Tham gia bản tin của chúng tôi ngay bây giờ</h6>
+                        <p>Nhận thông tin cập nhật qua E-mail về cửa hàng mới nhất và các ưu đãi đặc biệt của chúng tôi.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <button type="submit" class="site-btn">Đăng ký</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Đã đăng ký Bản quyền | Mẫu này được tạo bằng <i class="fa fa-heart" aria-hidden="true"></i> bởi <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function redirectToProfile() {
+            window.location.href = "./tables.html";
+            redirectToProfile()// Thay đổi "/profile" thành đường dẫn mong muốn
+        }
+    </script>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function loadBooks(){
+            $.ajax({
+                url: 'http://localhost:8080/api/book/all',
+                method: 'GET',
+                success: function(data) {
+
+                    $('#featured_book').empty(); // Clear existing list
+                    let htmlContent = data.map((p)=>{
+                        return `
+                            <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="${p.image}" style="background-image: url('${p.image}')">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">${p.name}</a></h6>
+                            <h5>${p.description}</h5>
+                        </div>
+                    </div>
+                </div>
+                        `
+                    }).join("");
+                    $('#featured_book').html(htmlContent)
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error fetching books:', error);
+                }
+            });
+        }
+
+        $( document ).ready(function() {
+            loadBooks();
+        });
+    </script>
+
+
+
+</body>
+
+</html>
