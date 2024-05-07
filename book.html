@@ -624,7 +624,7 @@
                         modalCreEdit.edit = true;
                         modalCreEdit.id = idBook;
                         $.ajax({
-                            url: `http://localhost:8080/api/book/${idBook}`,
+                            url: `http://localhost:8080/api/books/${idBook}`,
                             method: 'GET',
                             success: function(data) {
                                 $("#name").val(data.name);
